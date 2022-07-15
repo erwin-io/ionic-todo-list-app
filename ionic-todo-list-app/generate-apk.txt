@@ -1,0 +1,15 @@
+Step 1: Build the Ionic project
+>ionic build
+Step 2: Add support for the Android platform
+>ionic capacitor add android
+Step 3: Sync changes from your Ionic project to the Android part
+>ionic capacitor sync
+Step 4: Build for Android and generate apk
+>cd android && ./gradlew assembleDebug && cd ..
+
+
+notes: use following values
+
+distributionUrl :  gradle-5.4.1-all.zip
+
+classpath 'com.android.tools.build:gradle:3.5.3'
